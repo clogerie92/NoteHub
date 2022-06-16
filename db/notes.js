@@ -1,9 +1,10 @@
 const util = require("util");
 const fs = require("fs");
 // generates unique id's
-const uuidv1 = require("uuid/v1");
+// const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require('uuid');
 const readNote = util.promisify(fs.readFile);
-const writeNote = util.promisify(fs.watchFile);
+const writeNote = util.promisify(fs.writeFile);
 
 class Notes {
     read() {
