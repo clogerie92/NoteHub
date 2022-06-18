@@ -13,9 +13,7 @@ This is an application called NoteHub that can be used to write and save notes. 
 
 ## Preview
 
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
-
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./images/notes.png)
+Watch demo here - [Screencastify](https://drive.google.com/file/d/1QLO4OR7GBDUQor83JXq7dCkOhWtdGugR/view)
 
 ## Installation 
 The user should clone the repository from GitHub and then install Node. This application also requires a file system and uses Express for routes. 
