@@ -3,7 +3,7 @@ const fs = require("fs");
 let dbNotes = require("../db/db.json");
 
 router.get("/api/notes", (req, res) => {
-    dbNotes = JSON.parse(fs.readFileSync("db/db.json"));
+    dbNotes = JSON.parse(fs.readFileSync("db/db.json"))
     res.json(dbNotes);
 });
 router.post("/api/notes", (req, res) => {
@@ -20,7 +20,7 @@ router.post("/api/notes", (req, res) => {
     });
     res.json(dbNotes);
 });
-router.delete("/notes/:id", (req, res) => {
+router.delete("/api/notes/:id", (req, res) => {
     const newNotes = [];
     for (let i = 0; i < dbNotes.length; i++) {
         if (dbNotes[i] !=req.params.id) {
