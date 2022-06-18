@@ -17,11 +17,18 @@ class Notes {
     getNotes() {
         return this.read().then((notes) => {
             let usersNotes;
-            if (usersNotes === [].concat(JSON.parse(notes))) {
-                usersNotes = []
+            if (usersNotes = [].concat(JSON.parse(notes))) {
+                usersNotes = [];
             } else {
                 console.log("No notes found!");
             }
+            // try {
+            //     usersNotes === [].concat(JSON.parse(notes));
+            // } catch (err) {
+            //     usersNotes = [];
+            // }
+
+            return usersNotes;
         }); 
     }
     addNotes(note) {
@@ -29,7 +36,7 @@ class Notes {
         if(!title || !text) {
             console.log("Must add title and text to your note!");
         }
-        const newNote = {title, text, id: uuidv1()};
+        const newNote = {title, text, id: uuid.v1()};
         return this.getNotes().then((notes) => [...notes, newNote]).then((updatedNote) => this.write(updatedNote)).then(() => newNote);
     }
     removeNotes(id) {
