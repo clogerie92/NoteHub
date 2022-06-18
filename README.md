@@ -17,7 +17,7 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 
 ![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text](./images/notes.png)
 
-Watch demo here - [Screencastify](https://drive.google.com/file/d/1QLO4OR7GBDUQor83JXq7dCkOhWtdGugR/view)
+Watch demo here - [Screencastify](https://drive.google.com/file/d/1QLO4OR7GBDUQor83JXq7dCkOhWtdGugR/view) <br>
 Heroku Deployment - (https://the-note-hub.herokuapp.com/)
 
 ## Installation 
