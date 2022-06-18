@@ -11,15 +11,14 @@
 
 This is an application called NoteHub that can be used to write and save notes. NoteHub uses an Express.js back end and will save and retrieve note data from a JSON file. NoteHub is also deployed on Heroku.
 
-## Mock-Up
+## Preview
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
 ![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text](./images/notes.png)
 
-## Preview
-
 Watch demo here - [Screencastify](https://drive.google.com/file/d/1QLO4OR7GBDUQor83JXq7dCkOhWtdGugR/view)
+Heroku Deployment - (https://the-note-hub.herokuapp.com/)
 
 ## Installation 
 The user should clone the repository from GitHub and then install Node. This application also requires a file system and uses Express for routes. 
