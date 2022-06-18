@@ -23,7 +23,7 @@ router.post("/api/notes", (req, res) => {
 router.delete("/api/notes/:id", (req, res) => {
     const newNotes = [];
     for (let i = 0; i < dbNotes.length; i++) {
-        if (dbNotes[i] !=req.params.id) {
+        if (dbNotes[i].id !=req.params.id) {
             newNotes.push(dbNotes[i]);
         }
     }
